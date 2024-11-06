@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .navbar {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    .navbar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-img {
+      width: 50px; /* Atur lebar logo sesuai kebutuhan */
+      height: auto; /* Biarkan tinggi menyesuaikan proporsi */
+      margin-right: 10px; /* Jarak antara logo dan teks */
+    }
+
+    .store-name {
+      color: white;
+      font-size: 24px;
+    }
+
+    .nav-links {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      display: inline;
+      margin-left: 20px;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease; /* Transisi warna */
+    }
+
+    /* Efek saat mengarahkan kursor ke tautan */
+    .nav-links li a:hover {
+      color: #05a357;
+    }
+
+    .site-footer {
+      font-size: 14px;
+      color: #333;
+      background-color: #BED1CF;
+      padding-top: 50px;
+      margin-top: 20px;
+  }
+
+  .widget {
+      margin-bottom: 30px;
+  }
+
+  .heading {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+  }
+
+  .social li {
+      display: inline-block;
+      margin-right: 10px;
+  }
+
+  .social li a {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #008000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-decoration: none;
+  }
+
+  .social li a:hover {
+      background-color: #05a357;
+  }
+
+  .links li {
+      margin-bottom: 10px;
+  }
+
+  .links li a {
+      color: #333;
+      text-decoration: none;
+  }
+
+  .links li a:hover {
+      color: #008000;
+      text-decoration: underline;
+  }
+
+  main {
+    padding: 20px;
+    text-align: justify;
+  }
+
+  h2{
+    color:orange;
+  }
+
+
+  </style>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div>
+            <img
+              src="{{ url_for('static', filename='images/logo.png') }}"
+              alt="Toko Logo"
+              class="logo-img"
+            />
+            <span class="store-name">SawahMaju</span>
+          </div>
+          <div>
+            <ul class="nav-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/teknik_pertanian">Teknik Pertanian</a></li>
+              <li><a href="/weather">Informasi Cuaca</a></li>
+              <li><a href="/harga_pasar">Harga Pasar</a></li>
+              <li><a href="/bibit">Bibit Tanaman</a></li>
+              <li><a href="/pupuk">Pupuk dan Peptisida</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="penanaman">
+          <h2>Teknik Penanaman Tomat</h2>
+          <p>
+              <strong>1. Persiapan Lahan:</strong> Pilih lokasi yang terkena sinar matahari penuh dan tanah yang kaya akan nutrisi. Persiapkan lahan dengan membersihkan gulma dan memperbaiki struktur tanah.
+          </p>
+          <p>
+              <strong>2. Penanaman Bibit:</strong> Tanam bibit tomat pada kedalaman yang tepat (sekitar 1-2 cm) dan jarak tanam antar bibit sekitar 45-60 cm.
+          </p>
+          <p>
+              <strong>3. Pemeliharaan:</strong> Berikan air secara teratur, lakukan pemupukan sesuai kebutuhan, dan pantau kehadiran hama dan penyakit.
+          </p>
+      </section>
+      <section id="pemeliharaan">
+          <h2>Teknik Pemeliharaan Tomat</h2>
+          <p>
+              <strong>1. Penyiraman:</strong> Berikan air secara teratur, terutama saat tanaman masih muda atau saat cuaca sangat panas.
+          </p>
+          <p>
+              <strong>2. Pemupukan:</strong> Berikan pupuk organik atau pupuk buatan secara berkala untuk memastikan tanaman mendapatkan nutrisi yang cukup.
+          </p>
+          <p>
+              <strong>3. Pengendalian Hama dan Penyakit:</strong> Pantau tanaman secara rutin dan gunakan metode pengendalian yang tepat jika ditemukan hama atau penyakit.
+          </p>
+      </section>
+      <section id="panen">
+          <h2>Teknik Panen Tomat</h2>
+          <p>
+              <strong>1. Pematangan Buah:</strong> Panen tomat ketika buah sudah mencapai warna yang matang dan ukuran yang diinginkan.
+          </p>
+          <p>
+              <strong>2. Teknik Pemetikan:</strong> Pemetikan tomat dilakukan dengan merobek tangkai buah dari tanaman menggunakan tangan atau gunting.
+          </p>
+          <p>
+              <strong>3. Penanganan Pasca Panen:</strong> Simpan tomat di tempat yang sejuk dan kering serta hindari penumpukan yang berlebihan untuk mencegah kerusakan.
+          </p>
+      </section>
+  </main>
+    
+
+    <!-- footer-->
+    <div class="site-footer">
+      <div class="inner first">
+          <div class="container">
+              <div class="row">   
+                  <div class="col-md-6 col-lg-4">
+                      <div class="widget">
+                          <h3 class="heading">About Us</h3>
+                          <p>SawahMaju is a market place that everyone really needs.</p>
+                      </div>
+                      <div class="widget">
+                          <ul class="list-unstyled social">
+                              <li><a href="#"><span class="iconify" data-icon="ph:twitter-logo" data-width="30" data-height="30"></span></a></li>
+                              <li><a href="#"><span class="iconify" data-icon="ph:instagram-logo" data-width="30" data-height="30"></span></a></li>
+                              <li><a href="#"><span class="iconify" data-icon="ph:facebook-logo" data-width="30" data-height="30"></span></a></li>
+                          </ul>
+                      </div>
+              </div>
+              <div class="col-md-6 col-lg-2 pl-lg-5">
+                  <div class="widget">
+                      <h3 class="heading">Menu</h3>
+                      <ul class="links list-unstyled">
+                          <li><a href="#home" class="text-decoration-none">Home</a></li>
+                          <li><a href="#category" class="text-decoration-none">About</a></li>
+                          <li><a href="#product" class="text-decoration-none">Informasi Cuaca</a></li>
+                          <li><a href="#harga_pasar" class="text-decoration-none">Harga Pasar</a></li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="col-md-6 col-lg-2">
+                  <div class="widget">
+                      <h3 class="heading">Kategori</h3>
+                      <ul class="links list-unstyled">
+                          <li><a href="#" class="text-decoration-none">Pupuk</a></li>
+                          <li><a href="#" class="text-decoration-none">Peptisida</a></li>
+                          <li><a href="#" class="text-decoration-none">Cuaca</a></li>
+                          <li><a href="#" class="text-decoration-none">Panen</a></li>
+                          <li><a href="#" class="text-decoration-none">Penanaman</a></li>
+                          <li><a href="#" class="text-decoration-none">Organik</a></li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                  <div class="widget">
+                      <h3 class="heading">Kontak</h3>
+                      <ul class="list-unstyled links">
+                          <li><a href="#" class="text-decoration-none">sawahmaju@gmail.com</a></li>
+                          <li><a href="#" class="text-decoration-none">+62-895-3301-88539</a></li>
+                          <li><a href="#" class="text-decoration-none">SawahMaju</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+<!--end footer-->
+  </body>
+</html>

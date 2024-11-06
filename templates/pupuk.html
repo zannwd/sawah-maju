@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        background-color: #333;
+        padding: 10px 0;
+    }
+
+    .navbar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-img {
+        width: 50px; /* Atur lebar logo sesuai kebutuhan */
+        height: auto; /* Biarkan tinggi menyesuaikan proporsi */
+        margin-right: 10px; /* Jarak antara logo dan teks */
+    }
+
+    .store-name {
+        color: white;
+        font-size: 24px;
+    }
+
+    .nav-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li {
+        display: inline;
+        margin-left: 20px;
+    }
+
+    .nav-links li a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease; /* Transisi warna */
+    }
+
+    /* Efek saat mengarahkan kursor ke tautan */
+    .nav-links li a:hover {
+        color: #05a357;
+    }
+
+    .site-footer {
+        font-size: 14px;
+        color: #333;
+        background-color: #BED1CF;
+        padding-top: 50px;
+        margin-top: 20px;
+    }
+
+    .widget {
+        margin-bottom: 30px;
+    }
+
+    .heading {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .social li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .social li a {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #008000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .social li a:hover {
+        background-color: #05a357;
+    }
+
+    .links li {
+        margin-bottom: 10px;
+    }
+
+    .links li a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .links li a:hover {
+        color: #008000;
+        text-decoration: underline;
+    }
+
+    h1, h2, h3 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bold;
+        color: black;
+    }
+
+    p {
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .contain {
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+
+    .highlight {
+        background-color: #fff3cd;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .tip {
+        font-style: italic;
+        color: #6c757d;
+    }
+
+    section {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .seed {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        overflow: hidden;
+        width: 300px;
+    }
+    .seed img {
+        width: 100%;
+        height: auto;
+    }
+    .seed-info {
+        padding: 20px;
+    }
+    h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
+    p {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .about-header {
+      text-align: center;
+      margin-top: 50px;
+    }
+    
+</style>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div>
+            <img
+              src="{{ url_for('static', filename='images/logo.png') }}"
+              alt="Toko Logo"
+              class="logo-img"
+            />
+            <span class="store-name">SawahMaju</span>
+          </div>
+          <div>
+            <ul class="nav-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/teknik_pertanian">Teknik Pertanian</a></li>
+              <li><a href="/weather">Informasi Cuaca</a></li>
+              <li><a href="/harga_pasar">Harga Pasar</a></li>
+              <li><a href="/bibit">Bibit Tanaman</a></li>
+              <li><a href="/pupuk">Pupuk dan Peptisida</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Konten pupuk-->
+    <div class="contain">
+        <h1>Informasi Pupuk dan Peptisida</h1>
+        <div class="highlight">
+            <p>Pupuk dan peptisida merupakan dua hal yang sangat penting dalam pertanian modern. Mereka membantu meningkatkan produktivitas tanaman, melindungi mereka dari hama dan penyakit, serta memastikan kesehatan dan kualitas hasil panen.</p>
+        </div>
+        
+        <h2>Pupuk: Nutrisi untuk Pertumbuhan Tanaman</h2>
+        <div class="product">
+            <p>Pupuk merupakan salah satu unsur penting dalam dunia pertanian yang digunakan untuk menyuburkan tanah dan memberikan nutrisi yang diperlukan oleh tanaman untuk tumbuh dengan optimal. Deskripsi tentang pupuk dapat dijelaskan sebagai berikut:
+
+                Pupuk adalah bahan organik atau anorganik yang diberikan kepada tanaman dengan tujuan untuk meningkatkan kesuburan tanah dan menyediakan nutrisi yang diperlukan bagi pertumbuhan dan perkembangan tanaman. Secara umum, pupuk terdiri dari berbagai macam zat yang esensial bagi tanaman, seperti nitrogen (N), fosfor (P), kalium (K), serta unsur-unsur mikro seperti magnesium (Mg), kalsium (Ca), dan belerang (S).
+                
+                Pupuk dibagi menjadi dua kategori utama, yaitu pupuk organik dan pupuk anorganik. Pupuk organik biasanya berasal dari bahan-bahan alami, seperti kompos, pupuk kandang, dan limbah organik lainnya. Sedangkan pupuk anorganik, juga dikenal sebagai pupuk kimia, dibuat melalui proses industri dan mengandung nutrisi yang lebih terkonsentrasi.
+                
+                Pemberian pupuk yang tepat dan proporsional sangat penting dalam pertanian modern untuk memastikan tanaman mendapatkan nutrisi yang cukup untuk pertumbuhannya. Kelebihan atau kekurangan nutrisi dapat mengakibatkan berbagai masalah, mulai dari pertumbuhan yang terhambat hingga penyakit tanaman.
+                
+                Selain memberikan nutrisi, pupuk juga dapat membantu tanaman dalam menyerap air dengan lebih efisien, meningkatkan resistensi terhadap serangan hama dan penyakit, serta memperbaiki struktur tanah. Namun, penggunaan pupuk yang berlebihan juga dapat menyebabkan pencemaran lingkungan dan merusak kesuburan tanah dalam jangka panjang.
+                
+                Dengan demikian, penggunaan pupuk yang bijaksana dan sesuai dengan kebutuhan tanaman merupakan hal yang sangat penting dalam mencapai hasil pertanian yang optimal dan berkelanjutan.</p>
+        </div>
+    
+        <h2>Peptisida: Perlindungan dari Hama dan Penyakit</h2>
+        <div class="product">
+            <p>Peptisida adalah bahan kimia yang digunakan untuk melawan, mengendalikan, atau membasmi hama dan penyakit tanaman yang dapat merusak pertumbuhan dan hasil panen. Deskripsi tentang peptisida dapat dijelaskan sebagai berikut:
+
+                Peptisida merupakan salah satu komponen penting dalam praktik pertanian modern yang bertujuan untuk melindungi tanaman dari serangan hama dan penyakit yang dapat menyebabkan kerusakan pada tanaman serta menurunkan produktivitas pertanian. Peptisida biasanya terdiri dari berbagai zat kimia yang dirancang untuk mengganggu siklus hidup atau fungsi tubuh hama dan penyakit, sehingga membunuh atau mengendalikan populasi mereka.
+                
+                Ada beberapa jenis peptisida yang umum digunakan dalam pertanian, antara lain insektisida untuk mengendalikan serangga, fungisida untuk mengatasi penyakit jamur, herbisida untuk membasmi gulma, dan rodentisida untuk memerangi hama tikus dan hewan pengerat lainnya. Setiap jenis peptisida memiliki sifat dan mekanisme kerja yang berbeda-beda sesuai dengan target organisme yang ditujukan.
+                
+                Penggunaan peptisida dalam pertanian harus dilakukan dengan hati-hati dan sesuai dengan petunjuk penggunaan yang disarankan, karena penggunaan yang berlebihan atau tidak sesuai dapat menyebabkan dampak negatif bagi lingkungan dan kesehatan manusia. Oleh karena itu, pemilihan jenis peptisida yang tepat, dosis yang sesuai, dan penerapan yang benar merupakan hal yang sangat penting dalam pengendalian hama dan penyakit tanaman secara efektif dan aman.
+                
+                Meskipun peptisida memberikan manfaat dalam melindungi tanaman dari serangan hama dan penyakit, namun penting juga untuk mempertimbangkan penggunaan alternatif lain yang lebih ramah lingkungan, seperti metode pengendalian hama dan penyakit terpadu (integrated pest management) yang menggabungkan berbagai teknik pengendalian secara holistik dan berkelanjutan. Dengan demikian, penggunaan peptisida dalam pertanian harus dilakukan secara bijaksana dan bertanggung jawab untuk menjaga keseimbangan ekosistem dan keberlanjutan pertanian.</p>
+        </div>
+        
+        <section>
+            <div class="seed">
+                <img src="{{ url_for('static', filename='images/spinach.png') }}" alt="Bibit Jeruk">
+                <div class="seed-info">
+                    <h2>Bibit Jeruk</h2>
+                    <p><strong>Harga per Bibit:</strong> Rp. 5.000</p>
+                    <p><strong>Stok Tersedia:</strong> 100 bibit</p>
+                    <p>Bibit jeruk dipilih secara khusus untuk menghasilkan buah berkualitas tinggi.</p>
+                </div>
+            </div>
+            <div class="seed">
+                <img src="{{ url_for('static', filename='images/spinach.png') }}" alt="Bibit Tomat">
+                <div class="seed-info">
+                    <h2>Bibit Tomat</h2>
+                    <p><strong>Harga per Bibit:</strong> Rp. 3.000</p>
+                    <p><strong>Stok Tersedia:</strong> 150 bibit</p>
+                    <p>Bibit tomat yang tahan penyakit dan menghasilkan buah dengan rasa yang manis.</p>
+                </div>
+            </div>
+            <div class="seed">
+                <img src="{{ url_for('static', filename='images/spinach.png') }}" alt="Bibit Cabai">
+                <div class="seed-info">
+                    <h2>Bibit Cabai</h2>
+                    <p><strong>Harga per Bibit:</strong> Rp. 4.000</p>
+                    <p><strong>Stok Tersedia:</strong> 120 bibit</p>
+                    <p>Bibit cabai unggul dengan tingkat kepedasan yang sesuai dengan selera.</p>
+                </div>
+            </div>
+            <div class="seed">
+                <img src="{{ url_for('static', filename='images/spinach.png') }}" alt="Bibit Selada">
+                <div class="seed-info">
+                    <h2>Bibit Selada</h2>
+                    <p><strong>Harga per Bibit:</strong> Rp. 2.500</p>
+                    <p><strong>Stok Tersedia:</strong> 200 bibit</p>
+                    <p>Bibit selada yang cepat tumbuh dan tahan terhadap kondisi lingkungan yang beragam.</p>
+                </div>
+            </div>
+        </section>
+        <!--end Konten pupuk-->
+    
+    </div>
+    <!-- footer-->
+    <div class="site-footer">
+      <div class="inner first">
+          <div class="container">
+              <div class="row">   
+                  <div class="col-md-6 col-lg-4">
+                      <div class="widget">
+                          <h3 class="heading">About Us</h3>
+                          <p>SawahMaju is a market place that everyone really needs.</p>
+                      </div>
+                      <div class="widget">
+                          <ul class="list-unstyled social">
+                              <li><a href="#"><span class="iconify" data-icon="ph:twitter-logo" data-width="30" data-height="30"></span></a></li>
+                              <li><a href="#"><span class="iconify" data-icon="ph:instagram-logo" data-width="30" data-height="30"></span></a></li>
+                              <li><a href="#"><span class="iconify" data-icon="ph:facebook-logo" data-width="30" data-height="30"></span></a></li>
+                          </ul>
+                      </div>
+              </div>
+              <div class="col-md-6 col-lg-2 pl-lg-5">
+                  <div class="widget">
+                      <h3 class="heading">Menu</h3>
+                      <ul class="links list-unstyled">
+                          <li><a href="#home" class="text-decoration-none">Home</a></li>
+                          <li><a href="#category" class="text-decoration-none">About</a></li>
+                          <li><a href="#product" class="text-decoration-none">Informasi Cuaca</a></li>
+                          <li><a href="#harga_pasar" class="text-decoration-none">Harga Pasar</a></li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="col-md-6 col-lg-2">
+                  <div class="widget">
+                      <h3 class="heading">Kategori</h3>
+                      <ul class="links list-unstyled">
+                          <li><a href="#" class="text-decoration-none">Pupuk</a></li>
+                          <li><a href="#" class="text-decoration-none">Peptisida</a></li>
+                          <li><a href="#" class="text-decoration-none">Cuaca</a></li>
+                          <li><a href="#" class="text-decoration-none">Panen</a></li>
+                          <li><a href="#" class="text-decoration-none">Penanaman</a></li>
+                          <li><a href="#" class="text-decoration-none">Organik</a></li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="col-md-6 col-lg-4">
+                  <div class="widget">
+                      <h3 class="heading">Kontak</h3>
+                      <ul class="list-unstyled links">
+                          <li><a href="#" class="text-decoration-none">sawahmaju@gmail.com</a></li>
+                          <li><a href="#" class="text-decoration-none">+62-895-3301-88539</a></li>
+                          <li><a href="#" class="text-decoration-none">SawahMaju</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+<!--end footer-->
+  </body>
+</html>

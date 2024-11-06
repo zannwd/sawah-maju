@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .content {
+      position: relative;
+      text-align: center;
+  }
+
+  .content img {
+      width: 100%;
+      height: auto;
+  }
+
+  .explore-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      background-color: transparent; /* Ubah background-color menjadi transparent */
+      color: #fff;
+      border: 2px solid #fff; /* Tambahkan border */
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+  }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .navbar {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    .navbar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-img {
+      width: 50px; /* Atur lebar logo sesuai kebutuhan */
+      height: auto; /* Biarkan tinggi menyesuaikan proporsi */
+      margin-right: 10px; /* Jarak antara logo dan teks */
+    }
+
+    .store-name {
+      color: white;
+      font-size: 24px;
+    }
+
+    .nav-links {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      display: inline;
+      margin-left: 20px;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease; /* Transisi warna */
+    }
+
+    /* Efek saat mengarahkan kursor ke tautan */
+    .nav-links li a:hover {
+      color: #05a357;
+    }
+
+    .site-footer {
+      font-size: 14px;
+      color: #333;
+      background-color: #BED1CF;
+      padding-top: 50px;
+      margin-top: 20px;
+  }
+
+  .widget {
+      margin-bottom: 30px;
+  }
+
+  .heading {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+  }
+
+  .social li {
+      display: inline-block;
+      margin-right: 10px;
+  }
+
+  .social li a {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #008000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-decoration: none;
+  }
+
+  .social li a:hover {
+      background-color: #05a357;
+  }
+
+  .links li {
+      margin-bottom: 10px;
+  }
+
+  .links li a {
+      color: #333;
+      text-decoration: none;
+  }
+
+  .links li a:hover {
+      color: #008000;
+      text-decoration: underline;
+  }
+
+      /** pupuk **/
+
+      .about {
+           background: #fff;
+           padding: 90px 0;
+      }
+      
+      .about .titlepage {
+           text-align: right;
+           padding: 0;
+      }
+      
+      .about .titlepage h2 {
+           color: #1e2426;
+           margin-bottom: 30px;
+      }
+      
+      .about .titlepage p {
+           color: #222122;
+           font-size: 17px;
+           line-height: 30px;
+           font-weight: 500;
+           padding-bottom: 50px;
+      }
+      
+      .about_text {
+           padding: 0px 20px 0px 10px;
+      }
+
+      p{
+         text-align: justify;
+      }
+      
+      .about_img figure {
+           margin: 0;
+      }
+      
+      .about_img figure img {
+           width: 100%;
+      }
+
+      .read_more{
+         color: #FF204E;
+      }
+      
+      
+      /** end pupuk **/
+      
+      
+      /** our cuaca **/
+      
+      .our {
+           background: #fff;
+      }
+      
+      .our .titlepage {
+           text-align: left;
+           padding: 0;
+      }
+      
+      .our .titlepage h2 {
+           color: #1e2426;
+           margin-bottom: 30px;
+      }
+      
+      .our .titlepage p {
+           color: #222122;
+           font-size: 17px;
+           line-height: 30px;
+           font-weight: 500;
+           padding-bottom: 50px;
+      }
+      
+      .our_text {
+           padding: 0px 10px 0px 20px;
+      }
+      
+      .our_img figure {
+           margin: 0;
+      }
+      
+      .our_img figure img {
+           width: 100%;
+      }
+      
+      
+      /** end cuaca **/
+      
+      
+      /** bibit tanaman **/
+      
+      .our_fruit {
+           background: #fff;
+           padding: 90px 0 75px 0;
+      }
+      
+      .our_fruit .titlepage {
+           text-align: right;
+           padding: 0;
+      }
+      
+      .padd_lrri {
+           padding-right: 0px;
+      }
+      
+      .our_fruit .titlepage h2 {
+           color: #1e2426;
+           margin-bottom: 30px;
+      }
+      
+      .our_fruit .titlepage p {
+           color: #222122;
+           font-size: 17px;
+           line-height: 30px;
+           font-weight: 500;
+           padding-bottom: 50px;
+      }
+      
+      .our_fruit_text {
+           padding: 0px 20px 0px 10px;
+      }
+      
+      .our_fruit_img {
+           padding-bottom: 15px;
+      }
+      
+      .our_fruit_img figure {
+           margin: 0;
+      }
+      
+      .our_fruit_img figure img {
+           width: 100%;
+      }
+      
+      
+      /** end bibit tanaman **/
+      
+  </style>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div>
+            <img
+              src="{{ url_for('static', filename='images/logo.png') }}"
+              alt="Toko Logo"
+              class="logo-img"
+            />
+            <span class="store-name">SawahMaju</span>
+          </div>
+          <div>
+            <ul class="nav-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/teknik_pertanian">Teknik Pertanian</a></li>
+              <li><a href="/weather">Informasi Cuaca</a></li>
+              <li><a href="/harga_pasar">Harga Pasar</a></li>
+              <li><a href="/bibit">Bibit Tanaman</a></li>
+              <li><a href="/pupuk">Pupuk dan Peptisida</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="content">
+        <img src="{{ url_for('static', filename='images/cover1.png') }}" alt="Gambar Utama" style="width: 100%; height: auto;">
+        <button class="explore-button">Jelajahi Lebih Banyak</button>
+        <p id="changingText" style="color: #fff; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); font-size: 20px;"></p>
+      </div>
+      
+ <!-- harga pasar -->
+ <div id="our_fruit"  class="our_fruit">
+  <div class="container-fluid">
+     <div class="row d_flex">
+        <div class="col-xl-7 col-lg-7 col-md-12 padding_lert">
+           <div class="row">
+              <div class="col-md-6 padd_lrri">
+                 <div class="our_fruit_img">
+                    <figure><img src="{{ url_for('static', filename='images/mango.png') }}" alt="#"/></figure>
+                 </div>
+              </div>
+              <div class="col-md-6 padd_lrri">
+                 <div class="our_fruit_img">
+                    <figure><img src="{{ url_for('static', filename='images/produk.jpg') }}" alt="#"/></figure>
+                 </div>
+              </div>
+              <div class="col-md-6 padd_lrri">
+                 <div class="our_fruit_img">
+                    <figure><img src="{{ url_for('static', filename='images/apple.png') }}" alt="#"/></figure>
+                 </div>
+              </div>
+              <div class="col-md-6 padd_lrri">
+                 <div class="our_fruit_img">
+                    <figure><img src="{{ url_for('static', filename='images/spinach.png') }}" alt="#"/></figure>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-12">
+           <div class="our_fruit_text">
+              <div class="titlepage">
+                 <h2>Harga Pasar</h2>
+                 <p>Harga pasar pertanian mengacu pada harga jual atau beli produk pertanian di pasar. Harga ini sangat dipengaruhi oleh faktor-faktor seperti penawaran dan permintaan, musim tanam, cuaca, ketersediaan pasokan, biaya produksi, dan faktor eksternal lainnya. Fluktuasi harga pasar pertanian umumnya terjadi sepanjang tahun, dengan puncak harga saat pasokan sedikit dan permintaan tinggi. Pemantauan harga pasar pertanian penting bagi petani, pedagang, konsumen, dan pemangku kepentingan lainnya untuk membuat keputusan yang tepat dalam membeli, menjual, atau merencanakan produksi pertanian.</p>
+                 <a class="read_more" href="#">Lihat Harga</a>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</div>
+<!-- end harga pasar -->
+<!-- pupuk dan peptisida -->
+<div id="about"  class="about">
+  <div class="container-fluid">
+     <div class="row d_flex">
+        <div class="col-xl-7 col-lg-7 col-md-12 padding_lert">
+           <div class="about_img">
+              <figure><img src="{{ url_for('static', filename='images/pupuk.jpg') }}" alt="#"/></figure>
+           </div>
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-12">
+           <div class="about_text">
+              <div class="titlepage">
+                 <h2>Pupuk dan Peptisida</h2>
+                 <p>Pupuk dan pestisida merupakan dua elemen penting dalam praktik pertanian. Pupuk berperan dalam menyediakan nutrisi esensial bagi tanaman untuk tumbuh dan berkembang secara optimal. Jenis pupuk yang digunakan dapat bervariasi, mulai dari pupuk organik seperti kompos dan pupuk kandang hingga pupuk anorganik seperti urea, fosfat, dan kalium. Pemilihan pupuk yang tepat sesuai dengan kebutuhan tanaman dan kondisi tanah menjadi kunci dalam meningkatkan produktivitas pertanian. </p>
+                 <a class="read_more" href="#">Pupuk dan Peptisida</a>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</div>
+<!-- end pupuk dan peptisida -->
+<!-- cuaca -->
+<div id="our"  class="our">
+  <div class="container-fluid">
+     <div class="row d_flex">
+        <div class="col-xl-5 col-lg-5 col-md-12 order_2">
+           <div class="our_text">
+              <div class="titlepage">
+                 <h2>Cuaca</h2>
+                 <p>Cuaca memainkan peran krusial dalam kesuksesan pertanian. Variasi cuaca seperti hujan, suhu, dan kelembaban udara mempengaruhi pertumbuhan tanaman, produktivitas, dan kesehatan tanaman. Musim hujan yang berlebihan dapat menyebabkan banjir dan tanah tergenang, mengganggu penanaman dan menyebabkan kebusukan tanaman. Di sisi lain, musim kemarau yang panjang dapat mengakibatkan kekeringan dan kekurangan air, yang menghambat pertumbuhan tanaman dan mengurangi hasil panen. </p>
+                 <a class="read_more" href="#">Pahami Kondisi Cuaca</a>
+              </div>
+           </div>
+        </div>
+        <div class="col-xl-7 col-lg-7 col-md-12 padding_right order_1">
+           <div class="our_img">
+              <figure><img src="{{ url_for('static', filename='images/cuaca.jpg') }}" alt="#"/></figure>
+           </div>
+        </div>
+     </div>
+  </div>
+</div>
+<!-- end cuaca -->
+<!-- bibit tanaman -->
+<div id="about"  class="about">
+  <div class="container-fluid">
+     <div class="row d_flex">
+        <div class="col-xl-7 col-lg-7 col-md-12 padding_lert">
+           <div class="about_img">
+              <figure><img src="{{ url_for('static', filename='images/cover2.png') }}" alt="#"/></figure>
+           </div>
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-12">
+           <div class="about_text">
+              <div class="titlepage">
+                 <h2>Bibit Tanaman</h2>
+                 <p>Bibit tanaman adalah embrio atau anak tanaman yang baru saja tumbuh dari biji, stek, setek, okulasi, cangkok, atau teknik pembiakan tanaman lainnya. Ini merupakan awal dari siklus hidup tanaman, di mana bibit menjadi dasar pertumbuhan dan perkembangan selanjutnya. Bibit memiliki peran penting dalam proses penanaman karena kualitasnya akan memengaruhi pertumbuhan, produktivitas, dan kesehatan tanaman dewasa. Memilih bibit yang berkualitas adalah langkah awal yang penting untuk memastikan keberhasilan dalam bercocok tanam.</p>
+                 <a class="read_more" href="#">Bbibit Tanaman</a>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</div>
+<!-- end bibit tanaman -->
+
+<!-- footer-->
+    <div class="site-footer">
+        <div class="inner first">
+            <div class="container">
+                <div class="row">   
+                    <div class="col-md-6 col-lg-4">
+                        <div class="widget">
+                            <h3 class="heading">About Us</h3>
+                            <p>SawahMaju is a market place that everyone really needs.</p>
+                        </div>
+                        <div class="widget">
+                            <ul class="list-unstyled social">
+                                <li><a href="#"><span class="iconify" data-icon="ph:twitter-logo" data-width="30" data-height="30"></span></a></li>
+                                <li><a href="#"><span class="iconify" data-icon="ph:instagram-logo" data-width="30" data-height="30"></span></a></li>
+                                <li><a href="#"><span class="iconify" data-icon="ph:facebook-logo" data-width="30" data-height="30"></span></a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="col-md-6 col-lg-2 pl-lg-5">
+                    <div class="widget">
+                        <h3 class="heading">Menu</h3>
+                        <ul class="links list-unstyled">
+                            <li><a href="#home" class="text-decoration-none">Home</a></li>
+                            <li><a href="#category" class="text-decoration-none">About</a></li>
+                            <li><a href="#product" class="text-decoration-none">Informasi Cuaca</a></li>
+                            <li><a href="#harga_pasar" class="text-decoration-none">Harga Pasar</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-2">
+                    <div class="widget">
+                        <h3 class="heading">Kategori</h3>
+                        <ul class="links list-unstyled">
+                            <li><a href="#" class="text-decoration-none">Pupuk</a></li>
+                            <li><a href="#" class="text-decoration-none">Peptisida</a></li>
+                            <li><a href="#" class="text-decoration-none">Cuaca</a></li>
+                            <li><a href="#" class="text-decoration-none">Panen</a></li>
+                            <li><a href="#" class="text-decoration-none">Penanaman</a></li>
+                            <li><a href="#" class="text-decoration-none">Organik</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="widget">
+                        <h3 class="heading">Kontak</h3>
+                        <ul class="list-unstyled links">
+                            <li><a href="#" class="text-decoration-none">sawahmaju@gmail.com</a></li>
+                            <li><a href="#" class="text-decoration-none">+62-895-3301-88539</a></li>
+                            <li><a href="#" class="text-decoration-none">SawahMaju</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--end footer-->
+<script>
+  // JavaScript untuk mengatur teks yang berganti-ganti dengan efek ketikan
+  const changingText = document.getElementById("changingText");
+  const texts = ["Teknik Penanaman", "Pupuk dan Peptisida", "Hasil Panen", "Kondisi Cuaca", "Harga Pasar"]; // Daftar teks yang akan diganti
+  let currentIndex = 0;
+  let letterIndex = 0;
+
+  function typeEffect() {
+      if (letterIndex < texts[currentIndex].length) {
+          changingText.textContent += texts[currentIndex].charAt(letterIndex);
+          letterIndex++;
+          setTimeout(typeEffect, 100); // Waktu antar huruf (dalam milidetik)
+      } else {
+          setTimeout(eraseEffect, 2000); // Waktu tampil sebelum dihapus (dalam milidetik)
+      }
+  }
+
+  function eraseEffect() {
+      if (letterIndex >= 0) {
+          changingText.textContent = texts[currentIndex].substring(0, letterIndex);
+          letterIndex--;
+          setTimeout(eraseEffect, 50); // Waktu antar penghapusan huruf (dalam milidetik)
+      } else {
+          currentIndex = (currentIndex + 1) % texts.length;
+          setTimeout(typeEffect, 500); // Waktu tampil sebelum mengetik (dalam milidetik)
+      }
+  }
+
+  // Mulai efek ketikan
+  typeEffect();
+</script>
+  </body>
+</html>
